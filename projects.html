@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Rodrigo Martinez</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="components/ProjectCard.js" defer></script>
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            const projects = [
+                {
+                    title: 'Personal Portfolio ',
+                    technologies: 'HTML · CSS · JavaScript',
+                    repoUrl: 'https://github.com/RodaMrtnz/Portfolio'
+                }
+            ];
+            renderProjectCards('projects-container', projects);
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Home</a>
+        <h1>Projects</h1>
+        <div class="projects-grid" id="projects-container"></div>
+    </div>
+</body>
+</html>
+

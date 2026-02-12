@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Projects - Rodrigo Martinez</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="components/ProjectCard.js" defer></script>
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            const projects = [
+                {
+                    title: 'Music App',
+                    technologies: 'Node.js · React · JavaScript · REST API · Next.js · SQLite',
+                    repoUrl: 'https://github.com/fedeOrt23/PNT2-TrabajoPractico-1'
+                },
+                {
+                    title: 'Music app API',
+                    technologies: 'React · JavaScript · Node.js · squelize',
+                    repoUrl: 'https://github.com/MatiasVarasOrt/TrabajoPracticoFinalTP2'
+                },
+                {
+                    title: 'Employee Management ERP System',
+                    technologies: 'ASP .NET Core · Entity Framework · Identity',
+                    repoUrl: 'https://github.com/marianolongoort/NT1-2025-1C-C-G4'
+                },
+                {
+                    title: 'Funko Pop Web Site',
+                    technologies: 'Node.js · JavaScript · CSS · HTML',
+                    repoUrl: 'https://github.com/ingenieroRik/Grupo_8_NodeJS'
+                }
+            ];
+            renderProjectCards('projects-container', projects);
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Home</a>
+        <h1>Academic Projects</h1>
+        <div class="projects-grid" id="projects-container"></div>
+    </div>
+</body>
+</html>
